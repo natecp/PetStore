@@ -84,5 +84,52 @@ public class Pet {
 
     }
 
+    //PUT
+    @Test(priority = 3)
+    public void alterarPet() throws IOException {
+        String jsonBody = ler_json("db/pet2.json");
+
+        given()
+                .contentType("application/json")
+                .log().all()
+                .body(jsonBody)
+        .when()
+                .put(uri)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("name", is ("klaus"))
+                .body("status", is("unavailable"))
+
+
+        ;
+
+
+
+    }
+
+    //DELETE
+    @Test(priority = 4)
+    public void excluirPet(){
+        String petId = "1991030830";
+
+        given()
+                .contentType("application/json")
+                .log().all()
+
+                .when()
+                        .delete(uri + "/" + petId)
+
+                .then()
+                        .log().all()
+                        .statusCode(200)
+                        .body("code", is (200)) //está olhando a estrutura de dados que retorna do json
+                        .body("type", is("unknown"))
+                        .body("message", is("1991030830"));
+
+    }
+
+
+
     }
 

@@ -1,0 +1,194 @@
+Request method:	POST
+1Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1991030830,
+    "category": {
+        "id": 1,
+        "name": "132NC456DP"
+    },
+    "name": "klaus",
+    "photoUrls": [
+û        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fespecies%2Faves%2Fcomo-criar-um-papagaio%2F&psig=AOvVaw0ppF4cJp4TOmjz2pR62gg2&ust=1628814652052000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC558idqvICFQAAAAAdAAAAABAD"
+    ],
+    "tags": [
+
+        {
+            "id": 2021123,
+            "name": "token"
+
+        }
+    ],
+    "status": "available"
+}
+HTTP/1.1 200 OK
+%Date: Tue, 07 Sep 2021 12:47:50 GMT
+ Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+ Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1991030830,
+    "category": {
+        "id": 1,
+        "name": "132NC456DP"
+    },
+    "name": "klaus",
+    "photoUrls": [
+û        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fespecies%2Faves%2Fcomo-criar-um-papagaio%2F&psig=AOvVaw0ppF4cJp4TOmjz2pR62gg2&ust=1628814652052000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC558idqvICFQAAAAAdAAAAABAD"
+    ],
+    "tags": [
+
+        {
+            "id": 2021123,
+            "name": "token"
+
+        }
+    ],
+    "status": "available"
+}
+Request method:	GET
+<Request URI:	https://petstore.swagger.io/v2/pet/1991030830
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Tue, 07 Sep 2021 12:47:52 GMT
+ Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+ Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1991030830,
+    "category": {
+        "id": 1,
+        "name": "132NC456DP"
+    },
+    "name": "klaus",
+    "photoUrls": [
+û        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fespecies%2Faves%2Fcomo-criar-um-papagaio%2F&psig=AOvVaw0ppF4cJp4TOmjz2pR62gg2&ust=1628814652052000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC558idqvICFQAAAAAdAAAAABAD"
+    ],
+    "tags": [
+
+        {
+            "id": 2021123,
+            "name": "token"
+
+        }
+    ],
+    "status": "available"
+}
+O token Ã© 132NC456DP
+Request method:	PUT
+1Request URI:	https://petstore.swagger.io/v2/pet
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1991030830,
+    "category": {
+        "id": 1,
+        "name": "132NC456DP"
+    },
+    "name": "klaus",
+    "photoUrls": [
+û        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fespecies%2Faves%2Fcomo-criar-um-papagaio%2F&psig=AOvVaw0ppF4cJp4TOmjz2pR62gg2&ust=1628814652052000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC558idqvICFQAAAAAdAAAAABAD"
+    ],
+    "tags": [
+
+        {
+            "id": 2021123,
+            "name": "token"
+
+        }
+    ],
+    "status": "unavailable"
+}
+HTTP/1.1 200 OK
+%Date: Tue, 07 Sep 2021 12:47:53 GMT
+ Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+ Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1991030830,
+    "category": {
+        "id": 1,
+        "name": "132NC456DP"
+    },
+    "name": "klaus",
+    "photoUrls": [
+û        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.petz.com.br%2Fblog%2Fespecies%2Faves%2Fcomo-criar-um-papagaio%2F&psig=AOvVaw0ppF4cJp4TOmjz2pR62gg2&ust=1628814652052000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLC558idqvICFQAAAAAdAAAAABAD"
+    ],
+    "tags": [
+
+        {
+            "id": 2021123,
+            "name": "token"
+
+        }
+    ],
+    "status": "unavailable"
+}
+Request method:	DELETE
+<Request URI:	https://petstore.swagger.io/v2/pet/1991030830
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Tue, 07 Sep 2021 12:47:53 GMT
+ Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+ Server: Jetty(9.2.9.v20150224)
+
+{
+    "code": 200,
+    "type": "unknown",
+    "message": "1991030830"
+}
