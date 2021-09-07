@@ -12,6 +12,7 @@ import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.contains;
+import static org.hamcrest.Matchers.containsInAnyOrder;
 
 //3 - Classe
 public class Pet {
@@ -44,10 +45,10 @@ public class Pet {
         .then()
                 .log().all()
                 .statusCode(200)
-                .body("name", is ("klaus"))
+                .body("name", is ("zelda"))
                 .body( "status", is ("available"))
-                .body ("category.name", is ("132NC456DP")) //usar IS quando não tem colchetes dentro do principal
-                .body ("tags.name", contains("token")) //usar CONTAINS quando tem colchetes dentro do principal
+                .body ("category.name", is ("555888")) //usar IS quando não tem colchetes dentro do principal
+                .body ("tags.name", contains("teste")) //usar CONTAINS quando tem colchetes dentro do principal
         ;
 
 
@@ -129,6 +130,30 @@ public class Pet {
 
     }
 
+//GET POR STATUS
+@Test(priority = 5)
+    public void consultarPetPorStatus(){
+    String status = "available";
+            given()
+                    .contentType("application/json")
+                    .log().all()
+
+            .when()
+                    .get(uri + "/findByStatus?status=" + status)
+            .then()
+                    .log().all()
+                    .statusCode(200)
+
+
+
+
+
+            ;
+
+
+
+
+}
 
 
     }
