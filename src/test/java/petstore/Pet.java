@@ -10,7 +10,7 @@ import java.nio.file.Paths;
 import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.*;
 import static org.hamcrest.Matchers.contains;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 
@@ -143,12 +143,7 @@ public class Pet {
             .then()
                     .log().all()
                     .statusCode(200)
-
-
-
-
-
-            ;
+                    .body("name[]", everyItem(equalTo("zelda")));
 
 
 
