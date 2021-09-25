@@ -1,11 +1,13 @@
 package commons;
 
-import sun.misc.JavaAWTAccess;
-
+import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import java.io.IOException;
+import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Collection;
+import java.util.List;
 
 public class Data {
 
@@ -15,9 +17,12 @@ public class Data {
     }
 
     //Funcao para ler um arquivo CSV
-    public Collection<String[]> lerCsv(String caminhoCsv){
-
-        return null
+    //public Collection<String[]> lerCsv(String caminhoCsv) throws IOException {
+    public List<String[]> lerCsv(String caminhoCsv) throws IOException {
+        Reader reader = Files.newBufferedReader(Paths.get(caminhoCsv)); // Lê um texto
+        CSVReader csvReader = new CSVReaderBuilder(reader).withSkipLines(1).build(); // Abre como um CSV
+        List<String[]> users = csvReader.readAll(); // Lê todos os dados do CSV
+        return users;
     }
 }
 

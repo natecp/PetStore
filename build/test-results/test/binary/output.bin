@@ -1,38 +1,0 @@
-Request method:	POST
-2Request URI:	https://petstore.swagger.io/v2/user
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-2				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "id": 0,
-    "username": "link",
-    "firstName": "Link",
-    "lastName": "OOT",
-    "email": "link@test.com",
-    "password": "linkinho",
-    "phone": "21999887777",
-    "userStatus": 0
-}
-HTTP/1.1 200 OK
-%Date: Sun, 12 Sep 2021 22:15:53 GMT
- Content-Type: application/json
-Transfer-Encoding: chunked
-Connection: keep-alive
- Access-Control-Allow-Origin: *
-6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
-DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
- Server: Jetty(9.2.9.v20150224)
-
-{
-    "code": 200,
-    "type": "unknown",
-%    "message": "9223372000666119287"
-}
-#O userID Ã© 9223372000666119287
